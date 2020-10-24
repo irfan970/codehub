@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+input,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+#banner-sec .con {
+    padding: 0;
+    background: url("../img/tr-bg.png");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    position: relative;
+}
+.bannerCenterContent
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+#banner-sec .banner-centered-txt {
+    color: #ffffff;
+    font-size: 52px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+}
+
+#banner-sec .search-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-area {
+    min-width: 325px;
+    min-height: 40px;
+    margin: 0;
+    border-radius: 0;
+    background-clip: border-box;
+    border: 1px solid #c1c1c100;
+}
+
+.search-btn {
+    border-radius: 0;
+    min-height: 40px;
+    background-color: #fd4f32;
+    min-width: 120px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+#destination-sec {
+    padding: 40px 0px 40px 0px;
+    background-color: #eeeeee;
+}
+
+#destination-sec img {
+    width: 100%;
+}
+
+#destination-sec .dest-heading {
+    font-size: 16px;
+    color: #323232;
+}
+
+#destination-sec .cardBox {
+    display: flex;
+    justify-content: center;
+}
+
+#destination-sec .card-content {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0px 20px 20px;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+
+#destination-sec .card-content .cardContentHead {
+    font-size: 14px;
+    color: #323232;
+}
+
+#destination-sec .card-content .card-content-txt {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #696969;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+#destination-sec .dest-sec-card {
+    max-width: 240px;
+    width: 100%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+#destination-sec .dest-sec-card:last-child
+{
+    margin-right: 0px;
+}
+#destination-sec .dest-sec-card .ucaseTxt {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+.destBox {
+    max-width: 1020px;
+    width: 100%;
+    margin: auto;
+}
+
+#destination-sec .destBox .placeBox {
+    max-width: 240px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#destination-sec .destContent {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#contact-sec {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#contact-sec .contactSecHead {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 52px;
+}
+
+#contact-sec .contactSecBoxes {
+    padding-left: 55px;
+}
+
+#contact-sec {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#contact-sec .contactSecHead {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 52px;
+    color: #323232;
+    font-weight: lighter;
+    font-family: 'Open Sans';
+}
+
+#contact-sec .contactBoxHead {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #323232;
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+#contact-sec .contactBoxTxt {
+    font-size: 15px;
+    padding-right: 30px;
+    color: #8b8b8b;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+
+.emailBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.emailTxt {
+    margin-bottom: 15px;
+}
+
+.emailSearch {
+    margin-top: 15px;
+}
+
+#contact-sec .search-area {
+    background-color: #eeeeee;
+}
+
+.ucaseTxt {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+/*===============================================================================================================
+                                              Media Queries
+=================================================================================================================*/
+@media screen and (min-width:1201px)
+{
+    #banner-sec .con
+    {
+        height: 100vh;
+    }
+}
+@media screen and (max-width:1097px)
+{
+    #banner-sec .banner-centered-txt
+    {
+        font-size: 40px;
+        text-align: center;
+    }
+    .search-area
+    {
+        min-width: 260px;
+    }
+}
+@media screen and (max-width:767px)
+{
+    #destination-sec .cardBox
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #destination-sec .dest-sec-card:last-child
+{
+    margin-right: 10px;
+}
+    #destination-sec .dest-sec-card
+    {
+        width: 66%;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .destContent
+    {
+        text-align: center;
+    }
+    .form-inline
+    {
+        flex-direction: column;
+    }
+    .search-area
+    {
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .search-btn
+    {
+        border-radius: 5px;
+    }
+    #contact-sec .contactSecHead
+    {
+        font-size: 45px;
+        text-align: center;
+    }
+   
+    #contact-sec .contactBoxTxt
+    {
+        padding-right: 0;
+    }
+   
+}
+@media screen and (max-width:575px)
+{
+    #contact-sec .contactBox
+    {
+       text-align: center;
+    }
+}
+@media screen and (min-width:768px) and (max-width:890px)
+{
+    
+}
